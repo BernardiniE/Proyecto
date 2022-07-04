@@ -1,0 +1,581 @@
+:root {
+    --rosa1: #F8EDEB;
+    --rosa2: #FCD5CE;
+    --rosa3: #FFB5A7;
+    --amarillo: #f4f482;
+    --oscuro: #212121;
+    --blanco: #ffffff;
+    }
+
+/** Etiquetas principales **/
+
+body{
+    background-color: var(--rosa3);
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav" 
+    "main main main" 
+    "footer footer footer";
+    row-gap: 5px;
+}
+
+header{
+    background-color: var(--rosa2);
+    padding: 50px 20px 50px 20px;
+    border-style: double;
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-color: var(--rosa1);
+    padding: 5px 5px 5px 5px;
+    border: 15px 15px 15px 15px;
+    border-style: double;
+    grid-area: nav;
+}
+
+article{
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 5px 10px 5px ;
+}
+
+
+footer{
+    background-image: url(../imagenes/imagen\ de\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px 10px 10px 10px;
+    border-style: double;
+    padding: 20px 10px 20px 10px;
+    grid-area: footer;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+ul{
+    padding-left: 0;
+}
+
+
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+
+section,
+main{
+    border: 10px 10px 10px 10px;
+    border-style: double;
+}
+
+section{
+    max-width: 100%;
+}
+
+main{
+    grid-area: main;
+    border: 0;
+}
+
+
+/** Clases **/
+
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;    
+}
+#barralogo{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.logocontacto{
+    width: 50px;
+    height: 50px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#titulo{
+    font-family: 'Playball', cursive;
+    
+}
+
+.navegacion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 0;    
+}
+
+.navegacion__enlace {
+    color: var(--oscuro);
+}
+
+
+.navegacion__enlace:hover {
+    color: var(--rosa3);
+}
+
+.imagenes {
+    width: 250px;
+    height: 250px;
+    border: 5px solid var(--rosa1);
+    border-radius: 100%;
+}
+
+ 
+.contenedor__interno--footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor__interno--footer{
+    justify-content: center;
+}
+
+/** trabajos.html **/
+
+.diseños{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.diseños__tamaño{
+    width: 350px;
+    height: 350px;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+/** diseñadora.html **/
+
+.personales{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    grid-template-areas: "img0" "img1" "img2" "img3" "img4";
+}
+
+
+/** reseñas.html **/
+
+.testimonios{
+    display: flex;
+    align-items: center;
+}
+
+.testimonios__tamaños{
+    width: 250px;
+    height: 250px;
+    border: 5px double black;
+}
+
+
+/** recomendaciones.html **/
+
+.diseños__vid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/** contacto.html **/
+
+.formulario{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+/** GRID **/
+
+
+.gridsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    justify-items: center;
+    text-align: center;
+}
+
+.gridfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    text-align: center;
+}
+
+/** MQ **/
+
+@media screen and (min-width: 320px){
+
+    body{
+         display: grid;
+         grid-template-areas: 
+         "header" 
+         "nav" 
+         "main"
+         "footer";
+         justify-content: center;
+         align-content: center;
+     }
+
+     header{
+        display: grid;
+     }
+
+    section,
+    main{
+     border: 10px 10px 10px 10px;
+     border-style: double;
+    }
+
+    main{
+        grid-area: main;
+        border: 0;
+    }
+     
+
+     .contacto{
+        display: none;
+     }
+
+     #barralogo{
+        display: none;
+    }
+
+    #titulo{
+        font-family: 'Playball', cursive;
+    }
+
+ 
+    .gridsection{
+         display: grid;
+         grid-template-columns: 1fr;
+         justify-content: center;
+         align-content: center;
+     }
+
+
+    .gridfooter{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .diseños{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+    }
+    .diseños__tamaño{
+        width: 250px;
+        height: 250px;
+        border: 5px solid red;
+        border-radius: 50%;
+    }
+
+    .personales{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        grid-template-areas: "img0" "img1" "img2" "img3" "img4";
+    } 
+
+    .testimonios__tamaños{
+        width: 150px;
+        height: 150px;
+        border: 5px double black;
+    }
+
+    .diseños__vid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario{
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+ }
+
+@media screen and (min-width: 768px){   
+   
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header" 
+        "nav"
+        "main" 
+        "footer";
+        justify-content: center;
+        align-content: center;
+    }
+
+    header{
+        background-color: var(--rosa2);
+        padding: 50px 20px 50px 20px;
+        border-style: double;
+        grid-area: header;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section,
+    main{
+     border: 10px 10px 10px 10px;
+     border-style: double;
+    }
+
+    main{
+        grid-area: main;
+        border: 0;
+    }
+
+    #titulo{
+        font-family: 'Playball', cursive;
+    }
+ 
+    .gridsection{
+         display: grid;
+         grid-template-columns: 1fr;
+         column-gap: 5px;
+         justify-content: center;
+         align-content: center;
+     }
+
+     .gridfooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .diseños{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contacto{
+        display: grid;
+     }
+
+    #barralogo{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;    
+    }
+    .personales{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        grid-template-areas: "img0 img0" "img1 img2" "img3 img4";
+    } 
+
+    .testimonios__tamaños{
+        width: 200px;
+        height: 200px;
+        border: 5px double black;
+    }
+
+    .diseños__vid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+ }
+
+
+
+ @media screen and (min-width: 1024px){   
+   
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav" 
+        "main main main" 
+        "footer footer footer";
+        row-gap: 5px;
+    }
+
+    header{
+        background-color: var(--rosa2);
+        padding: 50px 20px 50px 20px;
+        border-style: double;
+        grid-area: header;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section,
+    main{
+     border: 10px 10px 10px 10px;
+     border-style: double;
+    }
+
+    main{
+        grid-area: main;
+        border: 0;
+    }
+
+
+    #titulo{
+        font-family: 'Playball', cursive;
+    }
+ 
+    .gridsection{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         column-gap: 5px;
+         justify-content: center;
+         align-content: center;
+     }
+
+     .gridfooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .diseños{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: center;
+        align-items: center;
+    }
+
+     #barralogo{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+     .personales{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        grid-template-areas: "img0 img0" "img1 img2" "img3 img4";
+
+    }
+
+    .testimonios__tamaños{
+        width: 250px;
+        height: 250px;
+        border: 5px double black;
+    }
+
+    .diseños__vid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario{
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+ }
