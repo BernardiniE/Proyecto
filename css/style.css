@@ -10,7 +10,8 @@
 /** Etiquetas principales **/
 
 body{
-    background-color: var(--rosa3);
+   /* background-color: var(--rosa3); */
+    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -21,7 +22,8 @@ body{
 }
 
 header{
-    background-color: var(--rosa2);
+    /* background-color: var(--rosa2); */
+    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 50px 20px 50px 20px;
     border-style: double;
     grid-area: header;
@@ -31,7 +33,8 @@ header{
 }
 
 nav{
-    background-color: var(--rosa1);
+  /*  background-color: var(--rosa1); */
+    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 5px 5px 5px 5px;
     border: 15px 15px 15px 15px;
     border-style: double;
@@ -46,9 +49,10 @@ article{
 
 
 footer{
-    background-image: url(../imagenes/imagen\ de\ fondo.jpg);
+  /*  background-image: url(../imagenes/imagen\ de\ fondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     border: 10px 10px 10px 10px;
     border-style: double;
     padding: 20px 10px 20px 10px;
@@ -67,7 +71,7 @@ p{
 
 h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
 }
 h2{
@@ -112,8 +116,20 @@ section{
 main{
     grid-area: main;
     border: 0;
+    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
 }
 
+input{
+    width: 250px;
+    height: 20px;
+    transition: all 2s;
+}
+input:focus{
+    width: 400px;
+    height: 50px;
+    font-size: x-large;
+
+}
 
 /** Clases **/
 
@@ -154,6 +170,7 @@ main{
 
 .navegacion__enlace {
     color: var(--oscuro);
+    transition: all 0.5s;
 }
 
 
@@ -280,6 +297,7 @@ main{
 
      header{
         display: grid;
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
      }
 
     section,
@@ -291,6 +309,7 @@ main{
     main{
         grid-area: main;
         border: 0;
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     }
      
 
@@ -382,7 +401,8 @@ main{
     }
 
     header{
-        background-color: var(--rosa2);
+       /* background-color: var(--rosa2); */
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
         padding: 50px 20px 50px 20px;
         border-style: double;
         grid-area: header;
@@ -400,6 +420,7 @@ main{
     main{
         grid-area: main;
         border: 0;
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     }
 
     #titulo{
@@ -493,7 +514,8 @@ main{
     }
 
     header{
-        background-color: var(--rosa2);
+      /*  background-color: var(--rosa2); */
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
         padding: 50px 20px 50px 20px;
         border-style: double;
         grid-area: header;
@@ -511,6 +533,7 @@ main{
     main{
         grid-area: main;
         border: 0;
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     }
 
 
