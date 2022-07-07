@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Fin Link css bootstrap-->
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,16 +33,30 @@
     <h1 class="animate__animated animate__fadeInDown" id="titulo"> ANIMA HOME-DECO</h1>
   </header>
   
-    <nav> <!-- Navegacion -->
-      <ul class="navegacion">
-        <li><a class="navegacion__enlace" href="index.html">Inicio</a></li>
-        <li><a class="navegacion__enlace" href="trabajos.html">Trabajos</a></li>
-        <li><a class="navegacion__enlace" href="diseñadora.html">Diseñadora</a></li>
-        <li><a class="navegacion__enlace" href="reseñas.html">Reseñas</a></li>
-        <li><a class="navegacion__enlace" href="recomendaciones.html">Recomendaciones</a></li>
-        <li><a class="navegacion__enlace" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>   <!-- Cierre Navegacion -->
+  <nav class="sticky-top"> <!-- Navegacion -->
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trabajos.html">Trabajos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="diseñadora.html">Diseñadora</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reseñas.html">Reseñas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+
+  </nav>   <!-- Cierre Navegacion -->
   <main>
 
     <section class="testimonios">
@@ -67,31 +86,34 @@
 
   <footer class="gridfooter">
     <a id="barralogo" href="index.html">
-      <img class="logo" src="imagenes/logoanima.jpeg" alt="Logo Anima">
+       <img class="logo" src="imagenes/logoanima.jpeg" alt="Logo Anima">
     </a>
-  <ul>
-   <li>
-      <a class="navegacion__enlace" href="#.html">
-         <img class="logocontacto" src="imagenes/icono fb 2.png" alt="fb">
-         <p >Anima Home-Deco</p>
-      </a>
-      
+ <ul>
+    <li>
+       <a class="nav-link" href="#.html">
+          <img class="logocontacto" src="imagenes/icono fb 2.png" alt="fb">
+          <p >Anima Home-Deco</p>
+       </a>
+     
     </li>
-   <li>
-      <a  class="navegacion__enlace" href="#.html">
-         <img class="logocontacto" src="imagenes/icono instagram.png" alt="instagram">
-         <p>@AnimaHome-deco</p>
-      </a>
-      
+    <li>
+       <a  class="nav-link" href="#.html">
+          <img class="logocontacto" src="imagenes/icono instagram.png" alt="instagram">
+          <p>@AnimaHome-deco</p>
+       </a>
     </li>
-  </ul>
-  <ul class="contenedor__interno--footer">
-    <li>David Magdalena 2658</li>
-    <li>Caseros</li>
-    <li>Tres de Febrero</li>
-    <li>1128245860</li>
-    <li>animastaff@gmail.com</li>
-  </ul>
+ </ul>
+ <ul class="contenedor__interno--footer">
+   <li>David Magdalena 2658</li>
+   <li>Caseros</li>
+   <li>Tres de Febrero</li>
+   <li>1128245860</li>
+   <li>animastaff@gmail.com</li>
+ </ul>
 </footer>
+
+<!--Link js bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- Fin Link js bootstrap-->
 </body>
 </html>
