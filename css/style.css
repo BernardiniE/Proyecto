@@ -10,7 +10,6 @@
 /** Etiquetas principales **/
 
 body{
-   /* background-color: var(--rosa3); */
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     display: grid;
     justify-content: space-between;
@@ -23,7 +22,6 @@ body{
 }
 
 header{
-    /* background-color: var(--rosa2); */
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 50px 20px 50px 20px;
     border-style: double;
@@ -34,7 +32,6 @@ header{
 }
 
 nav{
-  /*  background-color: var(--rosa1); */
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 5px 5px 5px 5px;
     border: 15px 15px 15px 15px;
@@ -53,7 +50,6 @@ footer{
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     border: 10px 10px 10px 10px;
     border-style: double;
-  /*  padding: 20px 10px 20px 10px; */
     grid-area: footer;
 }
 
@@ -95,9 +91,7 @@ li {
     display: inline;
     position: relative;
     font-size: 20px;
-    /*padding: 10px 10px 10px 10px; */
     margin: 10px 10px 10px 10px;
-
 }
 
 
@@ -122,6 +116,7 @@ input{
     height: 20px;
     transition: all 2s;
 }
+
 input:focus{
     width: 400px;
     height: 50px;
@@ -136,6 +131,7 @@ input:focus{
     height: 200px;
     border-radius: 100%;    
 }
+
 #barralogo{
     display: grid;
     justify-content: center;
@@ -151,12 +147,10 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #titulo{
     font-family: 'Playball', cursive;
-    
 }
 
 
@@ -262,6 +256,7 @@ input:focus{
 .form-control{
     text-align: center;
 }
+
 .form-label{
     text-decoration: none;
 }
@@ -398,6 +393,7 @@ input:focus{
         text-align: center;
     }
 
+}
 @media screen and (min-width: 768px){   
    
     body{
@@ -507,10 +503,7 @@ input:focus{
         
     }
 
-
  }
-
-
 
  @media screen and (min-width: 1024px){   
    
@@ -612,3 +605,4 @@ input:focus{
         align-items: center;
         text-align: center;
     }
+}
