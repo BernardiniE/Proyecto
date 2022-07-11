@@ -197,20 +197,18 @@ input:focus{
 
 /** trabajos.html **/
 
-.diseños{
+/* .diseños{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 15px;
     justify-items: center;
     align-items: center;
-}
+} */
 
 .diseños__tamaño{
     width: 350px;
     height: 350px;
-    border: 5px solid red;
-    border-radius: 50%;
 }
 
 /** diseñadora.html **/
@@ -357,20 +355,20 @@ input:focus{
         align-content: center;
     }
 
-    .diseños{
+    /* .diseños{
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 5px;
         row-gap: 5px;
         justify-items: center;
         align-items: center;
-    }
+    } */
+
     .diseños__tamaño{
-        width: 250px;
-        height: 250px;
-        border: 5px solid red;
-        border-radius: 50%;
+        width: 350px;
+        height: 350px;
     }
+    
 
     .personales{
         display: grid;
@@ -399,8 +397,6 @@ input:focus{
         align-items: center;
         text-align: center;
     }
-
- }
 
 @media screen and (min-width: 768px){   
    
@@ -457,14 +453,14 @@ input:focus{
         justify-content: center;
         align-content: center;
     }
-    .diseños{
+    /* .diseños{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
         row-gap: 10px;
         justify-items: center;
         align-items: center;
-    }
+    } */
 
     .contacto{
         display: grid;
@@ -572,14 +568,14 @@ input:focus{
         justify-content: center;
         align-content: center;
     }
-    .diseños{
+    /* .diseños{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 15px;
         row-gap: 15px;
         justify-items: center;
-        align-items: center;
-    }
+        align-items: center; 
+    } */
 
      #barralogo{
         display: grid;
@@ -616,5 +612,3 @@ input:focus{
         align-items: center;
         text-align: center;
     }
-
- }
