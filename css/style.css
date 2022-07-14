@@ -267,23 +267,21 @@ section .diseños__vid {
   .gridfooter #barralogo {
     display: none;
   }
-  .diseños__tamaño {
-    width: 350px;
-    height: 350px;
+  .col .diseños__tamaño {
+    width: 250px;
+    height: 250px;
   }
-  .testimonios__tamaños {
+  .testimonios {
+    border: 5px 5px 5px 5px;
+    border-style: double;
+  }
+  .testimonios .testimonios__tamaños {
     width: 150px;
     height: 150px;
     border: 5px double black;
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    display: grid;
-    grid-template-areas: "header" "nav" "main" "footer";
-    justify-content: space-between;
-    align-content: center;
-  }
   header {
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 50px 20px 50px 20px;
@@ -333,6 +331,10 @@ section .diseños__vid {
     height: 200px;
     border: 5px double black;
   }
+  .col .diseños__tamaño {
+    width: 350px;
+    height: 350px;
+  }
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -344,9 +346,13 @@ section .diseños__vid {
   .nav {
     flex-direction: row;
   }
-  .testimonios__tamaños {
-    width: 350px;
-    height: 350px;
+  .testimonios {
+    border: 10px 10px 10px 10px;
+    border-style: double;
+  }
+  .testimonios .testimonios__tamaños {
+    width: 250px;
+    height: 250px;
     border: 5px double black;
   }
 }/*# sourceMappingURL=style.css.map */
