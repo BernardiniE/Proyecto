@@ -1,27 +1,312 @@
+@charset "UTF-8";
 :root {
-    --rosa1: #F8EDEB;
-    --rosa2: #FCD5CE;
-    --rosa3: #FFB5A7;
-    --amarillo: #f4f482;
-    --oscuro: #212121;
-    --blanco: #ffffff;
-    }
-
-/** Etiquetas principales **/
-
-body{
-    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    display: grid;
-    justify-content: space-between;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav" 
-    "main main main" 
-    "footer footer footer";
-    row-gap: 5px;
+  --rosa1: #F8EDEB;
+  --rosa2: #FCD5CE;
+  --rosa3: #FFB5A7;
+  --amarillo: #f4f482;
+  --oscuro: #212121;
+  --blanco: #ffffff;
 }
 
-header{
+/** Etiquetas principales **/
+body {
+  background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+  row-gap: 5px;
+}
+
+article {
+  justify-content: center;
+  justify-items: center;
+  padding: 10px 5px 10px 5px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  font-family: "Josefin Sans", sans-serif;
+  display: inline;
+  position: relative;
+  font-size: 20px;
+  margin: 10px 10px 10px 10px;
+}
+
+main {
+  grid-area: main;
+  border: 10px 10px 10px 10px;
+  border-style: double;
+  background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  transition: all 2s;
+}
+
+input:focus {
+  width: 400px;
+  height: 50px;
+  font-size: x-large;
+}
+
+/** Clases **/
+header {
+  background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+  padding: 50px 20px 50px 20px;
+  border-style: double;
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+header #barralogo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+header .logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+header #titulo {
+  font-family: "Playball", cursive;
+}
+
+nav {
+  background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+  padding: 5px 5px 5px 5px;
+  border: 15px 15px 15px 15px;
+  border-style: double;
+  grid-area: nav;
+}
+nav .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0;
+}
+nav .nav .nav-link {
+  color: var(--oscuro);
+  transition: all 0.5s;
+}
+nav .nav .nav-link:hover {
+  color: var(--rosa3);
+}
+
+main .imagenes {
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+  border: 10px 10px 10px 10px;
+  border-style: double;
+  grid-area: footer;
+}
+
+.gridfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  text-align: center;
+}
+.gridfooter #barralogo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.gridfooter .logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.gridfooter .nav-link {
+  color: var(--oscuro);
+  transition: all 0.5s;
+}
+.gridfooter .nav-link:hover {
+  color: var(--rosa3);
+}
+.gridfooter .logocontacto {
+  width: 50px;
+  height: 50px;
+}
+.gridfooter .contenedor__interno--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/** trabajos.html **/
+.col .diseños__tamaño {
+  width: 350px;
+  height: 350px;
+}
+
+/** diseñadora.html **/
+.row h1 {
+  font-family: "Playball", cursive;
+}
+
+.row h2 {
+  text-align: center;
+}
+
+/** reseñas.html **/
+.testimonios {
+  display: flex;
+  align-items: center;
+}
+.testimonios .testimonios__tamaños {
+  width: 250px;
+  height: 250px;
+  border: 5px double black;
+}
+
+/** recomendaciones.html **/
+section .diseños__vid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/** contacto.html **/
+.contenedor__formulario {
+  display: flex;
+  justify-content: center;
+}
+.contenedor__formulario .formulario {
+  text-align: center;
+}
+.contenedor__formulario .formulario .form-control {
+  text-align: center;
+}
+.contenedor__formulario .formulario .form-label {
+  text-decoration: none;
+  text-align: center;
+}
+.contenedor__formulario .formulario .btn {
+  background-color: lightpink;
+  border: none;
+}
+.contenedor__formulario .formulario .btn:hover {
+  background-color: deeppink;
+}
+
+/** MQ **/
+@media screen and (min-width: 320px) {
+  body {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "header" "nav" "main" "footer";
+    align-content: center;
+  }
+  /* header{
+       display: grid;
+       background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+       } */
+  /*  main{
+        grid-area: main;
+        border: 10px 10px 10px 10px;
+        border-style: double;
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+    }  */
+  header .contacto {
+    display: none;
+  }
+  header #barralogo {
+    display: none;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gridfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  .gridfooter .contacto {
+    display: none;
+  }
+  .gridfooter #barralogo {
+    display: none;
+  }
+  .diseños__tamaño {
+    width: 350px;
+    height: 350px;
+  }
+  .testimonios__tamaños {
+    width: 150px;
+    height: 150px;
+    border: 5px double black;
+  }
+  /* .diseños__vid{
+       display: grid;
+       grid-template-columns: 1fr;
+       justify-items: center;
+       align-items: center;
+       justify-content: center;
+   } */
+  /* .formulario{
+       display: grid;
+       align-items: center;
+       text-align: center;
+   } */
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    justify-content: space-between;
+    align-content: center;
+  }
+  header {
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 50px 20px 50px 20px;
     border-style: double;
@@ -29,358 +314,108 @@ header{
     display: grid;
     justify-content: center;
     align-items: center;
-}
-
-nav{
-    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    padding: 5px 5px 5px 5px;
-    border: 15px 15px 15px 15px;
-    border-style: double;
-    grid-area: nav;
-}
-
-article{
-    justify-content: center;
-    justify-items: center;
-    padding: 10px 5px 10px 5px ; 
-}
-
-
-footer{
-    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    border: 10px 10px 10px 10px;
-    border-style: double;
-    grid-area: footer;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-p{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-}
-
-h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px;
-    text-align: center;
-}
-h2{
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px;
-}
-h3{
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-}
-h4{
-    font-family: 'Dancing Script', cursive;
-    font-size: 20px;
-}
-
-ul{
-    padding-left: 0;
-}
-
-
-li {
-    font-family: 'Josefin Sans', sans-serif;
-    display: inline;
-    position: relative;
-    font-size: 20px;
-    margin: 10px 10px 10px 10px;
-}
-
-
-section,
-main{
-    border: 10px 10px 10px 10px;
-    border-style: double;
-}
-
-section{
-    max-width: 100%;
-}
-
-main{
-    grid-area: main;
-    border: 0;
-    background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-}
-
-input{
-    width: 250px;
-    height: 20px;
-    transition: all 2s;
-}
-
-input:focus{
-    width: 400px;
-    height: 50px;
-    font-size: x-large;
-
-}
-
-/** Clases **/
-
-.logo{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;    
-}
-
-#barralogo{
+  }
+  header #barralogo {
     display: grid;
     justify-content: center;
     align-content: center;
-}
-
-.logocontacto{
-    width: 50px;
-    height: 50px;
-}
-
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#titulo{
-    font-family: 'Playball', cursive;
-}
-
-
-.nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-left: 0;
-}
-
-.nav-link {
-    color: var(--oscuro);
-    transition: all 0.5s;
-}
-
-.nav-link:hover{
-    color: var(--rosa3);
-}
-
-.imagenes {
-    width: 50%;
-    height: 50%;
-}
-
-.black{
-    color: black;
-}
- 
-.contenedor__interno--footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.contenedor__interno--footer{
-    justify-content: center;
-}
-
-/** trabajos.html **/
-
-/* .diseños{
+  }
+  header .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  .nav {
+    flex-direction: row;
+  }
+  .gridfooter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
-    justify-items: center;
-    align-items: center;
-} */
-
-.diseños__tamaño{
-    width: 350px;
-    height: 350px;
-}
-
-/** diseñadora.html **/
-
-.personales{
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  .gridfooter #barralogo {
     display: grid;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px 5px 10px 5px;
-    grid-template-areas: "img0" "img1" "img2" "img3" "img4";
+    align-content: center;
+  }
+  .gridfooter .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  .testimonios {
+    border: 10px 10px 10px 10px;
+    border-style: double;
+  }
+  .testimonios .testimonios__tamaños {
+    width: 200px;
+    height: 200px;
+    border: 5px double black;
+  }
+  /*  .diseños__vid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    } */
+  /*  .formulario{
+        display: grid;
+        align-items: center;
+        text-align: center;
+
+    } */
 }
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+    row-gap: 5px;
+  }
+  /*  header{
+        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+        padding: 50px 20px 50px 20px;
+        border-style: double;
+        grid-area: header;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    } */
+  /*   main{
+         grid-area: main;
+         border: 0;
+         background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
+     } */
+  .nav {
+    flex-direction: row;
+  }
+  /*  #titulo{
+        font-family: 'Playball', cursive;
+    } */
+  /*   .gridfooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        justify-content: center;
+        align-content: center;
 
 
-/** reseñas.html **/
-
-.testimonios{
-    display: flex;
-    align-items: center;
-}
-
-.testimonios__tamaños{
+     #barralogo{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    } */
+  img .testimonios__tamaños {
     width: 250px;
     height: 250px;
     border: 5px double black;
-}
-
-
-/** recomendaciones.html **/
-
-.diseños__vid{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-/** contacto.html **/
-
-.contenedor__formulario{
-    display: flex;
-    justify-content: center;
-    border: 10px 10px 10px 10px;
-    border-style: double;
-}
-
-.form-control{
-    text-align: center;
-}
-
-.form-label{
-    text-decoration: none;
-}
-
-.btn{
-    background-color: lightpink;
-    border: none;
-}
-
-.btn:hover{
-    background-color: deeppink;
-}
-
-/** GRID **/
-
-
-.gridsection{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    justify-items: center;
-    text-align: center;
-}
-
-.gridfooter{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    text-align: center;
-}
-
-/** MQ **/
-
-@media screen and (min-width: 320px){
-
-    body{
-         display: grid;
-         justify-content: space-between;
-         grid-template-areas: 
-         "header" 
-         "nav" 
-         "main"
-         "footer";
-         align-content: center;
-     }
-
-     header{
-        display: grid;
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-     }
-
-    section,
-    main{
-     border: 10px 10px 10px 10px;
-     border-style: double;
-    }
-
-    main{
-        grid-area: main;
-        border: 0;
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    }
-     
-
-     .contacto{
-        display: none;
-     }
-
-     #barralogo{
-        display: none;
-    }
-
-    #titulo{
-        font-family: 'Playball', cursive;
-    }
-
- 
-    .gridsection{
-         display: grid;
-         grid-template-columns: 1fr;
-         justify-content: center;
-         align-content: center;
-     }
-
-
-    .gridfooter{
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        justify-content: center;
-        align-content: center;
-    }
-
-    /* .diseños{
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 5px;
-        row-gap: 5px;
-        justify-items: center;
-        align-items: center;
-    } */
-
-    .diseños__tamaño{
-        width: 350px;
-        height: 350px;
-    }
-    
-
-    .personales{
-        display: grid;
-        justify-items: center;
-        text-align: center;
-        padding: 10px 5px 10px 5px;
-        grid-template-areas: "img0" "img1" "img2" "img3" "img4";
-    } 
-
-    .testimonios__tamaños{
-        width: 150px;
-        height: 150px;
-        border: 5px double black;
-    }
-
-    .diseños__vid{
+  }
+  /*  .diseños__vid{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -392,218 +427,5 @@ input:focus{
         display: grid;
         align-items: center;
         text-align: center;
-    }
-
-}
-@media screen and (min-width: 768px){   
-   
-    body{
-        display: grid;
-        grid-template-areas: 
-        "header" 
-        "nav"
-        "main" 
-        "footer";
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    header{
-       /* background-color: var(--rosa2); */
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-        padding: 50px 20px 50px 20px;
-        border-style: double;
-        grid-area: header;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section,
-    main{
-     border: 10px 10px 10px 10px;
-     border-style: double;
-    }
-
-    main{
-        grid-area: main;
-        border: 0;
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    }
-
-    #titulo{
-        font-family: 'Playball', cursive;
-    }
- 
-    .gridsection{
-         display: grid;
-         grid-template-columns: 1fr;
-         column-gap: 5px;
-         justify-content: center;
-         align-content: center;
-     }
-
-     .gridfooter{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        justify-content: center;
-        align-content: center;
-    }
-    /* .diseños{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        justify-items: center;
-        align-items: center;
     } */
-
-    .contacto{
-        display: grid;
-     }
-
-    #barralogo{
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .logo{
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;    
-    }
-    .personales{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        text-align: center;
-        padding: 10px 5px 10px 5px;
-        grid-template-areas: "img0 img0" "img1 img2" "img3 img4";
-    } 
-
-    .testimonios__tamaños{
-        width: 200px;
-        height: 200px;
-        border: 5px double black;
-    }
-
-    .diseños__vid{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .formulario{
-        display: grid;
-        align-items: center;
-        text-align: center;
-        
-    }
-
- }
-
- @media screen and (min-width: 1024px){   
-   
-    body{
-        display: grid;
-        justify-content: space-between;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav" 
-        "main main main" 
-        "footer footer footer";
-        row-gap: 5px;
-    }
-
-    header{
-      /*  background-color: var(--rosa2); */
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-        padding: 50px 20px 50px 20px;
-        border-style: double;
-        grid-area: header;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section,
-    main{
-     border: 10px 10px 10px 10px;
-     border-style: double;
-    }
-
-    main{
-        grid-area: main;
-        border: 0;
-        background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
-    }
-
-
-    #titulo{
-        font-family: 'Playball', cursive;
-    }
- 
-    .gridsection{
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         column-gap: 5px;
-         justify-content: center;
-         align-content: center;
-     }
-
-     .gridfooter{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        justify-content: center;
-        align-content: center;
-    }
-    /* .diseños{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 15px;
-        justify-items: center;
-        align-items: center; 
-    } */
-
-     #barralogo{
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
-
-     .personales{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        text-align: center;
-        padding: 10px 5px 10px 5px;
-        grid-template-areas: "img0 img0" "img1 img2" "img3 img4";
-
-    }
-
-    .testimonios__tamaños{
-        width: 250px;
-        height: 250px;
-        border: 5px double black;
-    }
-
-    .diseños__vid{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .formulario{
-        display: grid;
-        align-items: center;
-        text-align: center;
-    }
-}
+}/*# sourceMappingURL=style.css.map */
