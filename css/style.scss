@@ -147,6 +147,10 @@ main {
         width: 50%;
         height: 50%;
     } 
+
+    .caption {
+        color: map-get($estilos, rosahover)
+    }
 } 
 footer {
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
@@ -324,6 +328,10 @@ header{
             border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
    } 
+
+   .caption{
+    font-size: 15px;
+   }
 } 
 
 
@@ -389,6 +397,10 @@ header{
             @include tamaño(350px, 350px);
         }
     }
+
+    .caption{
+        font-size: 30px;
+       }
 
 
  }
