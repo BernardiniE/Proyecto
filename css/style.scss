@@ -1,10 +1,15 @@
-:root {
-    --rosa1: #F8EDEB;
-    --rosa2: #FCD5CE;
-    --rosa3: #FFB5A7;
-    --amarillo: #f4f482;
-    --oscuro: #212121;
-    --blanco: #ffffff;
+     $estilos: (
+        centro: center,
+        oscuro: #212121,
+        rosa3: #FFB5A7,
+        rosa1: lightpink,
+        rosahover: deeppink,
+        borde: double
+     );
+
+     @mixin tamaño($ancho, $alto) {
+        width : $ancho;
+        height: $alto;
     }
 
 /** Etiquetas principales **/
@@ -22,8 +27,8 @@ body{
 }
 
 article{
-    justify-content: center;
-    justify-items: center;
+    justify-content: map-get($estilos, centro);
+    justify-items: map-get($estilos, centro);
     padding: 10px 5px 10px 5px ;
 }
 
@@ -41,7 +46,7 @@ p{
 h1{
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
-    text-align: center;
+    text-align: map-get($estilos, centro);
 }
 h2{
     font-family: 'Dancing Script', cursive;
@@ -71,19 +76,17 @@ ul{
 main{
     grid-area: main;
     border: 10px 10px 10px 10px;
-    border-style: double;
+    border-style: map-get($estilos, borde);
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
 }
 
 input{
-    width: 250px;
-    height: 20px;
+    @include tamaño(250px, 20px); 
     transition: all 2s;
 }
 
 input:focus{
-    width: 400px;
-    height: 50px;
+    @include tamaño(400px, 50px);
     font-size: x-large;
 
 }
@@ -93,20 +96,19 @@ input:focus{
 header {
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 50px 20px 50px 20px;
-    border-style: double;
+    border-style: map-get($estilos, borde);
     grid-area: header;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-content: map-get($estilos, centro);
+    align-items: map-get($estilos, centro);
 
     #barralogo{
         display: grid;
-        justify-content: center;
-        align-content: center;
+        justify-content: map-get($estilos, centro);
+        align-content: map-get($estilos, centro);
     }
     .logo{
-        width: 200px;
-        height: 200px;
+        @include tamaño(200px, 200px);
         border-radius: 100%;    
     }
 
@@ -120,7 +122,7 @@ nav{
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     padding: 5px 5px 5px 5px;
     border: 15px 15px 15px 15px;
-    border-style: double;
+    border-style: map-get($estilos, borde);
     grid-area: nav;
 
     .nav{
@@ -130,12 +132,12 @@ nav{
         padding-left: 0;
   
         .nav-link {
-          color: var(--oscuro);
+          color: map-get($estilos, oscuro);
           transition: all 0.5s;
         }
       
         .nav-link:hover{
-          color: var(--rosa3);
+          color: map-get($estilos, rosahover);
         }
   }
 }
@@ -149,7 +151,7 @@ main {
 footer {
     background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
     border: 10px 10px 10px 10px;
-    border-style: double;
+    border-style: map-get($estilos, borde);
     grid-area: footer;
 }
 
@@ -157,46 +159,43 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
-    text-align: center;
+    text-align: map-get($estilos, centro);
 
           #barralogo{
               display: grid;
-              justify-content: center;
-              align-content: center;
+              justify-content: map-get($estilos, centro);
+              align-content: map-get($estilos, centro);
           }
           .logo{
-              width: 200px;
-              height: 200px;
+              @include tamaño(200px, 200px);
               border-radius: 100%;    
           }
 
           .nav-link {
-                    color: var(--oscuro);
+                    color: map-get($estilos, oscuro);
                     transition: all 0.5s;
           }
           .nav-link:hover{
-                    color: var(--rosa3);
+                    color: map-get($estilos, rosa3);
           }
 
           .logocontacto{
-                    width: 50px;
-                    height: 50px;
+                    @include tamaño(50px, 50px);
           }
 
           .contenedor__interno--footer{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+            align-items: map-get($estilos, centro);
+            text-align: map-get($estilos, centro);
+            justify-content: map-get($estilos, centro);
          }
             }
 /** trabajos.html **/
 
 .col{
     .diseños__tamaño{
-        width: 350px;
-        height: 350px;
+        @include tamaño(350px, 350px);
     }
 }
 
@@ -207,7 +206,7 @@ footer {
 }
 
 .row h2{
-    text-align: center;
+    text-align: map-get($estilos, centro);
 }
   
 
@@ -215,11 +214,10 @@ footer {
 
 .testimonios{
     display: flex;
-    align-items: center;
+    align-items: map-get($estilos, centro);
     .testimonios__tamaños{
-        width: 250px;
-        height: 250px;
-        border: 5px double black;
+        @include tamaño(250px, 250px);
+        border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
     }
 }
 
@@ -232,9 +230,9 @@ footer {
 section .diseños__vid{
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+    justify-items: map-get($estilos, centro);
+    align-items: map-get($estilos, centro);
+    justify-content: map-get($estilos, centro);
 }
 
 
@@ -242,25 +240,26 @@ section .diseños__vid{
 
 .contenedor__formulario{
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
 
      .formulario{
-        text-align: center;
+        text-align: map-get($estilos, centro);
 
         .form-control{
-            text-align: center;
+            @extend .formulario;
         }    
       
         .form-label{
+            @extend .formulario; 
             text-decoration: none;
-            text-align: center;
+         
         }
         .btn{
-            background-color: lightpink;
+            background-color: map-get($estilos, rosa1);
             border: none;
         }
         .btn:hover{
-            background-color: deeppink;
+            background-color: map-get($estilos, rosahover);
         }
         
      }      
@@ -280,41 +279,40 @@ body{
          "nav" 
          "main"
          "footer";
-     align-content: center;
+     align-content: map-get($estilos, centro);
      }
      
 header{
     .contacto{
-        display: none;
+        display: none;       
         }
         #barralogo{
-        display: none;
+        display: none;     
         }
     }
 
     .nav{
         flex-direction: column;
-        align-items: center;
+        align-items: map-get($estilos, centro);
     }
 
     .gridfooter{
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 5px;
-        justify-content: center;
-        align-content: center;
+        justify-content: map-get($estilos, centro);
+        align-content: map-get($estilos, centro);
 
         .contacto{
-            display: none;
+            display: none; 
             }
             #barralogo{
-            display: none;
+            display: none; 
             }
     }
 
     .col .diseños__tamaño{
-        width: 250px;
-        height: 250px;
+        @include tamaño(250px, 250px);
     }
     
 
@@ -322,9 +320,8 @@ header{
     border: 5px 5px 5px 5px;
     border-style: double;
         .testimonios__tamaños{
-            width: 150px;
-            height: 150px;
-            border: 5px double black;
+            @include tamaño(150px, 150px);
+            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
    } 
 } 
@@ -339,18 +336,17 @@ header{
         border-style: double;
         grid-area: header;
         display: grid;
-        justify-content: center;
-        align-items: center;
+        justify-content: map-get($estilos, centro);
+        align-items: map-get($estilos, centro);
 
         #barralogo{
             display: grid;
-            justify-content: center;
-            align-content: center;
+            justify-content: map-get($estilos, centro);
+            align-content: map-get($estilos, centro);
         }
     
         .logo{
-            width: 200px;
-            height: 200px;
+            @include tamaño(200px, 200px);
             border-radius: 100%;    
         }
     }
@@ -363,37 +359,34 @@ header{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
-        justify-content: center;
-        align-content: center;
+        justify-content: map-get($estilos, centro);
+        align-content: map-get($estilos, centro);
 
         #barralogo{
             display: grid;
-            justify-content: center;
-            align-content: center;
+            justify-content: map-get($estilos, centro);
+            align-content: map-get($estilos, centro);
         }
     
         .logo{
-            width: 200px;
-            height: 200px;
+            @include tamaño(200px, 200px);
             border-radius: 100%;    
         }
     }
 
     .testimonios{
         border: 10px 10px 10px 10px;
-        border-style: double;
+        border-style: map-get($estilos, borde);
 
         .testimonios__tamaños{
-            width: 200px;
-            height: 200px;
-            border: 5px double black;
+            @include tamaño(200px, 200px);
+            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
     }
 
     .col{
         .diseños__tamaño{
-            width: 350px;
-            height: 350px;
+            @include tamaño(350px, 350px);
         }
     }
 
@@ -420,12 +413,11 @@ header{
 
     .testimonios{
         border: 10px 10px 10px 10px;
-        border-style: double;
+        border-style: map-get($estilos, borde);
 
         .testimonios__tamaños{
-            width: 250px;
-            height: 250px;
-            border: 5px double black;
+            @include tamaño(250px, 250px);
+            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
     }
     

@@ -1,13 +1,4 @@
 @charset "UTF-8";
-:root {
-  --rosa1: #F8EDEB;
-  --rosa2: #FCD5CE;
-  --rosa3: #FFB5A7;
-  --amarillo: #f4f482;
-  --oscuro: #212121;
-  --blanco: #ffffff;
-}
-
 /** Etiquetas principales **/
 body {
   background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
@@ -122,11 +113,11 @@ nav .nav {
   padding-left: 0;
 }
 nav .nav .nav-link {
-  color: var(--oscuro);
+  color: #212121;
   transition: all 0.5s;
 }
 nav .nav .nav-link:hover {
-  color: var(--rosa3);
+  color: deeppink;
 }
 
 main .imagenes {
@@ -159,11 +150,11 @@ footer {
   border-radius: 100%;
 }
 .gridfooter .nav-link {
-  color: var(--oscuro);
+  color: #212121;
   transition: all 0.5s;
 }
 .gridfooter .nav-link:hover {
-  color: var(--rosa3);
+  color: #FFB5A7;
 }
 .gridfooter .logocontacto {
   width: 50px;
@@ -200,7 +191,7 @@ footer {
 .testimonios .testimonios__tamaños {
   width: 250px;
   height: 250px;
-  border: 5px double black;
+  border: 5px double #212121;
 }
 
 /** recomendaciones.html **/
@@ -217,15 +208,11 @@ section .diseños__vid {
   display: flex;
   justify-content: center;
 }
-.contenedor__formulario .formulario {
-  text-align: center;
-}
-.contenedor__formulario .formulario .form-control {
+.contenedor__formulario .formulario, .contenedor__formulario .formulario .form-label, .contenedor__formulario .formulario .form-control {
   text-align: center;
 }
 .contenedor__formulario .formulario .form-label {
   text-decoration: none;
-  text-align: center;
 }
 .contenedor__formulario .formulario .btn {
   background-color: lightpink;
@@ -278,7 +265,7 @@ section .diseños__vid {
   .testimonios .testimonios__tamaños {
     width: 150px;
     height: 150px;
-    border: 5px double black;
+    border: 5px double #212121;
   }
 }
 @media screen and (min-width: 768px) {
@@ -329,7 +316,7 @@ section .diseños__vid {
   .testimonios .testimonios__tamaños {
     width: 200px;
     height: 200px;
-    border: 5px double black;
+    border: 5px double #212121;
   }
   .col .diseños__tamaño {
     width: 350px;
@@ -353,6 +340,6 @@ section .diseños__vid {
   .testimonios .testimonios__tamaños {
     width: 250px;
     height: 250px;
-    border: 5px double black;
+    border: 5px double #212121;
   }
 }/*# sourceMappingURL=style.css.map */
