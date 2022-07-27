@@ -127,6 +127,9 @@ main .imagenes {
 main .caption {
   color: deeppink;
 }
+main .img-thumbnail {
+  border-radius: 100%;
+}
 
 footer {
   background-image: linear-gradient(225deg, #d6d4f1 0, #dad3ef 6.25%, #dfd2ed 12.5%, #e3d0ea 18.75%, #e7cfe8 25%, #eacfe4 31.25%, #edcee1 37.5%, #f0cdde 43.75%, #f2cdda 50%, #f4cdd6 56.25%, #f5cdd3 62.5%, #f5cdcf 68.75%, #f5cdcb 75%, #f5cec8 81.25%, #f4cec5 87.5%, #f3cfc2 93.75%, #f1d0c0 100%);
@@ -261,9 +264,18 @@ section .diseños__vid {
     width: 250px;
     height: 250px;
   }
-  .testimonios {
+  /* .testimonios{
     border: 5px 5px 5px 5px;
     border-style: double;
+        .testimonios__tamaños{
+            @include tamaño(150px, 150px);
+            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
+        }
+   }  */
+  .testimonios {
+    display: grid;
+    justify-items: center;
+    text-align: center;
   }
   .testimonios .testimonios__tamaños {
     width: 150px;
@@ -271,7 +283,7 @@ section .diseños__vid {
     border: 5px double #212121;
   }
   .caption {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -316,6 +328,7 @@ section .diseños__vid {
     border-radius: 100%;
   }
   .testimonios {
+    display: flex;
     border: 10px 10px 10px 10px;
     border-style: double;
   }
@@ -329,7 +342,7 @@ section .diseños__vid {
     height: 350px;
   }
   .caption {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 @media screen and (min-width: 1024px) {

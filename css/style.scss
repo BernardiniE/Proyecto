@@ -149,7 +149,11 @@ main {
     } 
 
     .caption {
-        color: map-get($estilos, rosahover)
+        color: map-get($estilos, rosahover);
+    }
+
+    .img-thumbnail{
+        border-radius: 100%;
     }
 } 
 footer {
@@ -320,17 +324,27 @@ header{
     }
     
 
-   .testimonios{
+  /* .testimonios{
     border: 5px 5px 5px 5px;
     border-style: double;
         .testimonios__tamaños{
             @include tamaño(150px, 150px);
             border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
-   } 
+   }  */
+
+   .testimonios{
+    display: grid;
+    justify-items: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
+    .testimonios__tamaños{
+        @include tamaño(150px, 150px);
+        border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
+    }
+}
 
    .caption{
-    font-size: 15px;
+    font-size: 20px;
    }
 } 
 
@@ -383,6 +397,7 @@ header{
     }
 
     .testimonios{
+        display: flex;
         border: 10px 10px 10px 10px;
         border-style: map-get($estilos, borde);
 
@@ -392,6 +407,7 @@ header{
         }
     }
 
+
     .col{
         .diseños__tamaño{
             @include tamaño(350px, 350px);
@@ -399,7 +415,7 @@ header{
     }
 
     .caption{
-        font-size: 30px;
+        font-size: 45px;
        }
 
 
