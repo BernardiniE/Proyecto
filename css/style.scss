@@ -224,7 +224,7 @@ footer {
     display: flex;
     align-items: map-get($estilos, centro);
     .testimonios__tamaños{
-        @include tamaño(250px, 250px);
+        @include tamaño(300px, 300px);
         border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
     }
 }
@@ -241,6 +241,7 @@ section .diseños__vid{
     justify-items: map-get($estilos, centro);
     align-items: map-get($estilos, centro);
     justify-content: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
 }
 
 
@@ -323,22 +324,12 @@ header{
         @include tamaño(250px, 250px);
     }
     
-
-  /* .testimonios{
-    border: 5px 5px 5px 5px;
-    border-style: double;
-        .testimonios__tamaños{
-            @include tamaño(150px, 150px);
-            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
-        }
-   }  */
-
    .testimonios{
     display: grid;
     justify-items: map-get($estilos, centro);
     text-align: map-get($estilos, centro);
     .testimonios__tamaños{
-        @include tamaño(150px, 150px);
+        @include tamaño(200px, 200px);
         border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
     }
 }
@@ -346,6 +337,7 @@ header{
    .caption{
     font-size: 20px;
    }
+
 } 
 
 
@@ -402,7 +394,7 @@ header{
         border-style: map-get($estilos, borde);
 
         .testimonios__tamaños{
-            @include tamaño(200px, 200px);
+            @include tamaño(250px, 250px);
             border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
     }
@@ -444,7 +436,7 @@ header{
         border-style: map-get($estilos, borde);
 
         .testimonios__tamaños{
-            @include tamaño(250px, 250px);
+            @include tamaño(300px, 300px);
             border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
         }
     }

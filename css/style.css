@@ -195,8 +195,8 @@ footer {
   align-items: center;
 }
 .testimonios .testimonios__tamaños {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 5px double #212121;
 }
 
@@ -207,6 +207,7 @@ section .diseños__vid {
   justify-items: center;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /** contacto.html **/
@@ -264,22 +265,14 @@ section .diseños__vid {
     width: 250px;
     height: 250px;
   }
-  /* .testimonios{
-    border: 5px 5px 5px 5px;
-    border-style: double;
-        .testimonios__tamaños{
-            @include tamaño(150px, 150px);
-            border: 5px map-get($estilos, borde) map-get($estilos, oscuro);
-        }
-   }  */
   .testimonios {
     display: grid;
     justify-items: center;
     text-align: center;
   }
   .testimonios .testimonios__tamaños {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 5px double #212121;
   }
   .caption {
@@ -333,8 +326,8 @@ section .diseños__vid {
     border-style: double;
   }
   .testimonios .testimonios__tamaños {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 5px double #212121;
   }
   .col .diseños__tamaño {
@@ -360,8 +353,8 @@ section .diseños__vid {
     border-style: double;
   }
   .testimonios .testimonios__tamaños {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border: 5px double #212121;
   }
 }/*# sourceMappingURL=style.css.map */
